@@ -1,4 +1,3 @@
-
 var down = document.getElementById('download'),
     text1 = document.getElementById('text1'),
     text2 = document.getElementById('text2'),
@@ -7,18 +6,19 @@ var down = document.getElementById('download'),
     canvas = document.getElementById('canvas'),
     uploaded = document.getElementById('uploaded'),
     meme_images = document.getElementsByClassName('meme-preview-img'),
-    placeholder_image = document.getElementById('placeholder_image');
+    firstMemeElement = document.getElementsByClassName('active-meme')[0];
 
 text1.addEventListener('keyup', updateImage);
 text2.addEventListener('keyup', updateImage);
 sliderSize.addEventListener('change', updateImage);
 sliderSizeBottom.addEventListener('change', updateImage);
 down.addEventListener('click', exportCanvas);
+$('.meme-preview-img').on('click', changeBaseImg);
 
 var curImg = null;
 
-placeholder_image.onload = function() {
-    curImg = placeholder_image;
+firstMemeElement.onload = function() {
+    curImg = firstMemeElement;
     updateImage();
 }
 
@@ -33,12 +33,9 @@ function drawLines(ctx, lines, x, y, yStep) {
     });
 }
 
-
-
 function updateImage() {
     var LINE_HEIGHT = 1.1;
     var PARAGRAPH_HEIGHT = 1.2;
-
 
     var canvasSize = autoScale({
         w: curImg.width,
@@ -102,4 +99,12 @@ function exportCanvas(){
   } else {
     alert("Can not export");
   }
+}
+
+function changeBaseImg () {
+  console.log('ehy');
+  $('#' + curImg.id).removeClass('active-meme');  //this is hacky. could just be javascript instead of this quazi-jquery. (but, hey, it works)
+  $('#' + this.id).addClass('active-meme'); //this is hacky too. (but, hey, it works)
+  curImg = this;
+  updateImage();
 }

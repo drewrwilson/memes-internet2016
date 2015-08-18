@@ -21,6 +21,7 @@ textarea {
 
 .meme-preview img {
   padding: 5px;
+  width:200px;
 }
 
 .meme-preview img:hover {
@@ -30,4 +31,8 @@ textarea {
  -o-transform: scale(1.05);
  -ms-transform: scale(1.05);
  transform: scale(1.05);
+}
+
+.active-meme {
+  border: solid 2px;
 }
