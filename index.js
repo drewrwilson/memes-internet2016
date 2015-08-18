@@ -13,6 +13,7 @@ text1.addEventListener('keyup', updateImage);
 text2.addEventListener('keyup', updateImage);
 sliderSize.addEventListener('change', updateImage);
 sliderSizeBottom.addEventListener('change', updateImage);
+down.addEventListener('click', exportCanvas);
 
 var curImg = null;
 
@@ -91,4 +92,14 @@ function autoScale(input, max) {
     output[larger] = factor * input[larger];
     output[smaller] = factor * input[smaller];
     return output;
+}
+
+function exportCanvas(){
+  if (canvas && canvas.getContext) {
+    var img = canvas.toDataURL("image/png;base64;");
+    img = img.replace("image/png","image/octet-stream"); // force download, user would have to give the file name
+    down.href = img;
+  } else {
+    alert("Can not export");
+  }
 }
