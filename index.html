@@ -1,15 +1,15 @@
 <html>
 <head>
 <title>Meme generator</title>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="text-center meme-preview">
-    <img src="http://placehold.it/200x200" class="meme-preview-img" data-large-file="http://placehold.it/600x600" />
-    <img src="http://placehold.it/200x200" class="meme-preview-img"  data-large-file="http://placehold.it/800x800"  />
-    <img src="http://placehold.it/200x200" class="meme-preview-img"  />
-    <img src="http://placehold.it/200x200" class="meme-preview-img"  />
+    <img src="assets/img/200x200.png" class="meme-preview-img" />
+    <img src="assets/img/200x200.png" class="meme-preview-img" />
+    <img src="assets/img/200x200.png" class="meme-preview-img"  />
+    <img src="assets/img/200x200.png" class="meme-preview-img"  />
   </div>
 
     <div id="main">
@@ -29,13 +29,13 @@
             <input type="range" id="sliderSize" value="62" min="10" max="72">
             <br><br>
             <textarea class="caption" id="text2" cols="60" rows="3" placeholder="Bottom text"></textarea><br><br>
-            <label for="sliderSizeBottom">Font size (top)</label>
+            <label for="sliderSizeBottom">Font size (bottom)</label>
             <input type="range" id="sliderSizeBottom" value="50" min="10" max="72">
 
             <div class="text-center" style="padding-top: 10px;">
               <a id="download" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
 
-              <img id="placeholder_image" src="http://placehold.it/500x500" style="display: none">
+              <img id="placeholder_image" src="assets/img/500x500.png" style="display: none">
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
 
 
     </div>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
