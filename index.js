@@ -102,7 +102,6 @@ function exportCanvas(){
 }
 
 function changeBaseImg () {
-  console.log('ehy');
   $('#' + curImg.id).removeClass('active-meme');  //this is hacky. could just be javascript instead of this quazi-jquery. (but, hey, it works)
   $('#' + this.id).addClass('active-meme'); //this is hacky too. (but, hey, it works)
   curImg = this;
