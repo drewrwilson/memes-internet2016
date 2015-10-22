@@ -5,44 +5,49 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="text-center meme-preview">
-    <img id="person1" src="assets/img/500x500.png" class="meme-preview-img active-meme" />
-    <img id="person2" src="assets/img/500x500.png" class="meme-preview-img" />
-    <img id="person3" src="assets/img/500x500.png" class="meme-preview-img" />
-    <img id="person4" src="assets/img/500x500.png" class="meme-preview-img"  />
-    <img id="person5" src="assets/img/500x500.png" class="meme-preview-img"  />
-  </div>
-
-    <div id="main">
-        <div id="header" class="text-center">
-            <h1>Make Your Own Meme</h1>
-            <br>
-        </div>
-
-        <div class="row" style="padding-right: 10%; padding-left: 10%;">
-          <div class="col-sm-8 text-center">
-            <canvas id="canvas" style="width: 600px"></canvas>
-          </div>
-          <div class="col-sm-4 text-left">
-            <h2>Add Text</h2>
-            <textarea class="caption" id="text1" cols="60" rows="3" placeholder="Top text"></textarea><br>
-            <label for="sliderSize">Font size (top)</label>
-            <input type="range" id="sliderSize" value="62" min="10" max="72">
-            <br><br>
-            <textarea class="caption" id="text2" cols="60" rows="3" placeholder="Bottom text"></textarea><br><br>
-            <label for="sliderSizeBottom">Font size (bottom)</label>
-            <input type="range" id="sliderSizeBottom" value="50" min="10" max="72">
-
-            <div class="text-center" style="padding-top: 10px;">
-              <a id="download" class="btn btn-primary btn-lg" download="internet2016-meme.png"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
-
-            </div>
-          </div>
-        </div>
-
-
+  <main>
+    <marquee><h1>omg lol republicans! omg lol republicans! omg lol republicans! omg lol republicans! omg lol republicans! omg lol republicans! omg lol republicans! omg lol republicans! </h1></marquee>
+    <div class="text-center meme-preview">
+      <img id="bush" src="assets/img/republicans/jebbush.jpg" class="meme-preview-img active-meme" />
+      <img id="carson" src="assets/img/republicans/bencarson.jpg" class="meme-preview-img" />
+      <img id="paul" src="assets/img/republicans/randpaul.jpg" class="meme-preview-img" />
+      <img id="person4" src="assets/img/500x500.png" class="meme-preview-img"  />
+      <img id="person5"  src="assets/img/500x500.png" class="meme-preview-img"  />
 
     </div>
+
+      <div id="main">
+          <div id="header" class="text-center">
+              <h1>Make Your Own Meme</h1>
+              <br>
+          </div>
+
+          <div class="row" style="padding-right: 10%; padding-left: 10%;">
+            <div class="col-sm-8 text-center">
+              <canvas id="canvas" style="width: 600px"></canvas>
+            </div>
+            <div class="col-sm-4 text-left">
+              <h2>Add Text</h2>
+              <textarea class="caption" id="text1" cols="60" rows="3" placeholder="Top text"></textarea><br>
+              <label for="sliderSize">Font size (top)</label>
+              <input type="range" id="sliderSize" value="62" min="10" max="72">
+              <br><br>
+              <textarea class="caption" id="text2" cols="60" rows="3" placeholder="Bottom text"></textarea><br><br>
+              <label for="sliderSizeBottom">Font size (bottom)</label>
+              <input type="range" id="sliderSizeBottom" value="50" min="10" max="72">
+
+              <div class="text-center" style="padding-top: 10px;">
+                <a id="download" class="btn btn-primary btn-lg" download="internet2016-meme.png"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+
+  </main>
     <script src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>

@@ -70,11 +70,11 @@ function updateImage() {
 
 
     //apply hashtag image overlay
-    var imageObj = new Image();
-    imageObj.onload = function() {
-      ctx.drawImage(imageObj, 400, 560);
-    };
-    imageObj.src = 'assets/img/i16-tag.png';
+    // var imageObj = new Image();
+    // imageObj.onload = function() {
+    //   ctx.drawImage(imageObj, 400, 560);
+    // };
+    // imageObj.src = 'assets/img/i16-tag.png';
 
     console.log(text1.value, text2.value);
 }
